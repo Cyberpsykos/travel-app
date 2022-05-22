@@ -40,7 +40,7 @@ function Main() {
         <h1 style={{color: 'white'}}>Helsingborg reseguide</h1>
         <Box>
           <Paper elevation={5}>
-            <Box sx={{width: '55vw', height: '30vh', minWidth: '396px'}}>
+            <Box sx={{width: '55vw', height: '30vh', minWidth: '396px', marginLeft: '0.5vw', marginRight: '0.5vw', paddingTop: '0.5vw', borderRadius: '50px'}}>
               <img src="https://google.com/maps/vt/data=FCtdEQ_ApJrhEbnejDnfRzQhgDrYO_LaBopNNDMZTSjuQ-PmUZKgSz7Rkx2YOgtDicBVzsGQ0b0HEt_aVK7Do0QBA738B4Y06Viyv7WehJUgTv4KW9vluR7SbIl00hClhZ2ctHbqmuf-AkZ8G4EhbCdENq8" width='100%' height='100%' title="Map of Helsingborg" alt="Map of Helsingborg"/>
               {/* Exempel bild */}
             </Box>
@@ -73,7 +73,7 @@ function Main() {
                 </Typography>
               </AccordionDetails>
             </Accordion>
-            <Button fullWidth sx={{backgroundColor: 'green', color: 'black'}} variant="contained"><Typography sx={{fontSize: '3vh'}}>Travel</Typography></Button>
+            <Button fullWidth sx={{backgroundColor: 'green', color: 'black', width: '55vw', minWidth: '396px', marginTop: '1vh'}} variant="contained"><Typography sx={{fontSize: '3vh'}}>Travel</Typography></Button>
             <Link fullWidth style={{textDecoration: 'none'}} to="/settings/"><Typography sx={{fontSize: '3vh', color: 'black'}}>Settings</Typography></Link>
           </Paper>
         </Box>
