@@ -65,7 +65,7 @@ För elscooter valde vi att starta med att integrera Bolt's elsparkcyklar genom 
 Slutligen för att beräkna rese tid med bil, gång, cyklar och elsparkcyklar använder vi Google Maps API. Vi valde att köra på Googles APi:er utifrån våra tidigare erfarenheter att kalla på deras API:er och användning av deras pålitliga kart applikation.
 
 ## Setup
-För manuell deployment i test miljö: Se till att du har node.js installerat, ställ dig i root mappen (./travel-app), där kör du npm start för att starta rest miljön.
+För manuell deployment i test miljö: Se till att du har node.js installerat, ställ dig i root mappen (./travel-app), där kör du npm start för att starta test miljön.
 
 Om du direkt vill se sidan kan du följa länken <a  href=https://rese.xn--ml-yia.net/ >HÄR</a> eller skanna qr-koden nedan.
 
