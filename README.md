@@ -1,5 +1,10 @@
 # **The Mobility Challenge Travel app**
 
+## Exempel Bilder
+<img src="public\App.png" alt="drawing" width="200"/>
+<img src="public\AppWithPosition.png" alt="drawing" width="200"/>
+<img src="public\AppOpenDetails.png" alt="drawing" width="200"/>
+
 
 ## Introduktion
 Här finner du en app skapad i React gjort originellt för en tävling som fokuserar på hållbara och klimatsmarta mobilitetslösningar, arrangerat av Consid & Riksbyggen runt år 2022
