@@ -20,7 +20,6 @@ function Main() {
   let Distans = 0;
   let Emission = 0;
 
-
   const [position, setPosition] = React.useState('');
   const handleChange = (event) => {
     setPosition(event.target.value);
@@ -39,15 +38,12 @@ function Main() {
     return (
       <div className="Main">
         <h1 style={{color: 'white'}}>Helsingborg reseguide</h1>
-
-        
-
         <Box>
           <Paper elevation={5}>
-          <Box fullWidth sx={{width: '55vw', height: '30vh', borderRadius: '50px'}}>
-          <img src="https://google.com/maps/vt/data=FCtdEQ_ApJrhEbnejDnfRzQhgDrYO_LaBopNNDMZTSjuQ-PmUZKgSz7Rkx2YOgtDicBVzsGQ0b0HEt_aVK7Do0QBA738B4Y06Viyv7WehJUgTv4KW9vluR7SbIl00hClhZ2ctHbqmuf-AkZ8G4EhbCdENq8" width='60%' height='100%' title="Map of Helsingborg" alt="Map of Helsingborg"/>
-          {/* Exempel bild */}
-        </Box>
+            <Box sx={{width: '55vw', height: '30vh', minWidth: '396px'}}>
+              <img src="https://google.com/maps/vt/data=FCtdEQ_ApJrhEbnejDnfRzQhgDrYO_LaBopNNDMZTSjuQ-PmUZKgSz7Rkx2YOgtDicBVzsGQ0b0HEt_aVK7Do0QBA738B4Y06Viyv7WehJUgTv4KW9vluR7SbIl00hClhZ2ctHbqmuf-AkZ8G4EhbCdENq8" width='100%' height='100%' title="Map of Helsingborg" alt="Map of Helsingborg"/>
+              {/* Exempel bild */}
+            </Box>
             <TextField fullWidth id="position" placeholder="Enter position..." value={position} onChange={handleChange} variant="filled"/>
             <TextField fullWidth id="destination" placeholder="Enter destination..." value={destination} onChange={handleChange2} variant="filled"/>
             {/* Byt till input kontroll */}
@@ -56,11 +52,11 @@ function Main() {
               Resesätt
             </InputLabel>
             <NativeSelect defaultValue={travel} inputProps={{name: 'Resesätt',id: 'uncontrolled-native',}}>
-              <option onSelect={setChange} value={travel}>Gå</option>
-              <option onSelect={setChange} value={travel}>Bil</option>
-              <option onSelect={setChange} value={travel}>Buss</option>
-              <option onSelect={setChange} value={travel}>Cykel</option>
-              <option onSelect={setChange} value={travel}>Bolt</option>
+              <option onChange={setChange} value={"Walk"}>Gå</option>
+              <option onChange={setChange} value={"Car"}>Bil</option>
+              <option onChange={setChange} value={"Bus"}>Buss</option>
+              <option onChange={setChange} value={"Bike"}>Cykel</option>
+              <option onChange={setChange} value={"Bolt"}>Bolt</option>
             </NativeSelect>
           </FormControl>
           <Accordion>
@@ -81,7 +77,6 @@ function Main() {
             <Link fullWidth style={{textDecoration: 'none'}} to="/settings/"><Typography sx={{fontSize: '3vh', color: 'black'}}>Settings</Typography></Link>
           </Paper>
         </Box>
-
     </div>
     );
   }

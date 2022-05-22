@@ -5,12 +5,10 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Main from './Main';
 import Settings from './Settings';
 
-
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
-    width,
-    height
+    width, height
   };
 }
 
@@ -46,5 +44,3 @@ export default function App() {
     </Router>
   );
 }
-
-// style={{width: width, height: height}}
