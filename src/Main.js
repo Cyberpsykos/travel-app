@@ -44,8 +44,8 @@ function Main() {
               <img src="https://google.com/maps/vt/data=FCtdEQ_ApJrhEbnejDnfRzQhgDrYO_LaBopNNDMZTSjuQ-PmUZKgSz7Rkx2YOgtDicBVzsGQ0b0HEt_aVK7Do0QBA738B4Y06Viyv7WehJUgTv4KW9vluR7SbIl00hClhZ2ctHbqmuf-AkZ8G4EhbCdENq8" width='100%' height='100%' title="Map of Helsingborg" alt="Map of Helsingborg"/>
               {/* Exempel bild */}
             </Box>
-            <TextField fullWidth id="position" placeholder="Enter position..." value={position} onChange={handleChange} variant="filled"/>
-            <TextField fullWidth id="destination" placeholder="Enter destination..." value={destination} onChange={handleChange2} variant="filled"/>
+            <TextField fullWidth id="position" placeholder="Skriv position..." value={position} onChange={handleChange} variant="filled"/>
+            <TextField fullWidth id="destination" placeholder="Skriv destination..." value={destination} onChange={handleChange2} variant="filled"/>
             {/* Byt till input kontroll */}
             <FormControl variant='standard'>
             <InputLabel variant="standard" htmlFor="uncontrolled-native">
@@ -61,20 +61,20 @@ function Main() {
           </FormControl>
           <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-          <Typography>Details</Typography>
+          <Typography>Detailjer</Typography>
             </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  <p>Travel alternative: {travel}</p>
+                  <p>Rese destination: {travel}</p>
                   <Divider />
                   <p>Distans: {Distans}km</p>
                   <Divider />
-                  <p>Emission: {Emission} CO<sub>2</sub></p>
+                  <p>Utsläpp: {Emission} CO<sub>2</sub></p>
                 </Typography>
               </AccordionDetails>
             </Accordion>
-            <Button fullWidth sx={{backgroundColor: 'green', color: 'black', width: '55vw', minWidth: '396px', marginTop: '1vh'}} variant="contained"><Typography sx={{fontSize: '3vh'}}>Travel</Typography></Button>
-            <Link fullWidth style={{textDecoration: 'none'}} to="/settings/"><Typography sx={{fontSize: '3vh', color: 'black'}}>Settings</Typography></Link>
+            <Button fullWidth sx={{backgroundColor: 'green', color: 'black', width: '55vw', minWidth: '396px', marginTop: '1vh'}} variant="contained"><Typography sx={{fontSize: '3vh'}}>Starta resa!</Typography></Button>
+            <Link fullWidth style={{textDecoration: 'none'}} to="/settings/"><Typography sx={{fontSize: '3vh', color: 'black'}}>Inställningar</Typography></Link>
           </Paper>
         </Box>
     </div>
