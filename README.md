@@ -32,7 +32,7 @@ Med vår app-lösning ger vi slutanvändaren en större tydlig bild av hur deras
 ## App funktioner
 Listat här är de funktioner vi håller på att implementerar och utvecklar in i appen.
 
-- En lätt manövrerad hemsida med en urskiljande app identitet
+- En lätt manövrerad webbapp med en urskiljande app identitet
 
 - Val av transport sätt:
 
