@@ -1,6 +1,6 @@
 # **The Mobility Challenge Travel app**
 
-## Exempel Bilder
+## Skärmdumpar
 <p float="left">
 <img src="public\App.png" alt="drawing" width="250"/>
 <img src="public\AppWithPosition.png" alt="drawing" width="250"/>
