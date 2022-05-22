@@ -67,7 +67,7 @@ Slutligen för att beräkna rese tid med bil, gång, cyklar och elsparkcyklar an
 ## Setup
 För manuell deployment i test miljö: Se till att du har node.js installerat, ställ dig i root mappen (./travel-app), där kör du npm start för att starta rest miljön.
 
-Om du direkt vill se sidan direkt kan du följa länken <a  href=https://rese.xn--ml-yia.net/ >HÄR</a> eller skanna qr-koden.
+Om du direkt vill se sidan kan du följa länken <a  href=https://rese.xn--ml-yia.net/ >HÄR</a> eller skanna qr-koden nedan.
 
 
 <p align="center">
