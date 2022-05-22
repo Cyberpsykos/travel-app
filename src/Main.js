@@ -16,7 +16,7 @@ import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
 
 function Main() {
-  const travelMethod = "Gå";
+  // const travelMethod = "Gå";
   let Distans = 0;
   let Emission = 0;
 
@@ -30,31 +30,37 @@ function Main() {
   const handleChange2 = (event) => {
     setDestination(event.target.value);
   }
+
+  const [travel, setTravel] = React.useState('Walk');
+  const setChange = (event) => {
+    setTravel(event.target.value);
+  }
   
     return (
       <div className="Main">
-        <h1>Travel companion</h1>
+        <h1 style={{color: 'white'}}>Helsingborg reseguide</h1>
 
-        <Box sx={{width: '90vw', height: '40vh', borderRadius: '50px'}}>
-          <img src="https://google.com/maps/vt/data=FCtdEQ_ApJrhEbnejDnfRzQhgDrYO_LaBopNNDMZTSjuQ-PmUZKgSz7Rkx2YOgtDicBVzsGQ0b0HEt_aVK7Do0QBA738B4Y06Viyv7WehJUgTv4KW9vluR7SbIl00hClhZ2ctHbqmuf-AkZ8G4EhbCdENq8" width='60%' height='100%' title="Map of Helsingborg" alt="Map of Helsingborg"/>
-          {/* Exempel bild */}
-        </Box>
+        
 
         <Box>
           <Paper elevation={5}>
+          <Box fullWidth sx={{width: '55vw', height: '30vh', borderRadius: '50px'}}>
+          <img src="https://google.com/maps/vt/data=FCtdEQ_ApJrhEbnejDnfRzQhgDrYO_LaBopNNDMZTSjuQ-PmUZKgSz7Rkx2YOgtDicBVzsGQ0b0HEt_aVK7Do0QBA738B4Y06Viyv7WehJUgTv4KW9vluR7SbIl00hClhZ2ctHbqmuf-AkZ8G4EhbCdENq8" width='60%' height='100%' title="Map of Helsingborg" alt="Map of Helsingborg"/>
+          {/* Exempel bild */}
+        </Box>
             <TextField fullWidth id="position" placeholder="Enter position..." value={position} onChange={handleChange} variant="filled"/>
-            <TextField fullWidth id="position" placeholder="Enter position..." value={destination} onChange={handleChange2} variant="filled"/>
+            <TextField fullWidth id="destination" placeholder="Enter destination..." value={destination} onChange={handleChange2} variant="filled"/>
             {/* Byt till input kontroll */}
             <FormControl variant='standard'>
             <InputLabel variant="standard" htmlFor="uncontrolled-native">
               Resesätt
             </InputLabel>
-            <NativeSelect defaultValue={'Go'} inputProps={{name: 'Resesätt',id: 'uncontrolled-native',}}>
-              <option value={'Go'}>Gå</option>
-              <option value={'Car'}>Bil</option>
-              <option value={'Bus'}>Buss</option>
-              <option value={'Bike'}>Cykel</option>
-              <option value={'Bolt'}>Bolt</option>
+            <NativeSelect defaultValue={travel} inputProps={{name: 'Resesätt',id: 'uncontrolled-native',}}>
+              <option onSelect={setChange} value={travel}>Gå</option>
+              <option onSelect={setChange} value={travel}>Bil</option>
+              <option onSelect={setChange} value={travel}>Buss</option>
+              <option onSelect={setChange} value={travel}>Cykel</option>
+              <option onSelect={setChange} value={travel}>Bolt</option>
             </NativeSelect>
           </FormControl>
           <Accordion>
@@ -63,7 +69,7 @@ function Main() {
             </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  <p>Travel alternative: {travelMethod}</p>
+                  <p>Travel alternative: {travel}</p>
                   <Divider />
                   <p>Distans: {Distans}km</p>
                   <Divider />
@@ -71,10 +77,11 @@ function Main() {
                 </Typography>
               </AccordionDetails>
             </Accordion>
+            <Button fullWidth sx={{backgroundColor: 'green', color: 'black'}} variant="contained"><Typography sx={{fontSize: '3vh'}}>Travel</Typography></Button>
+            <Link fullWidth style={{textDecoration: 'none'}} to="/settings/"><Typography sx={{fontSize: '3vh', color: 'black'}}>Settings</Typography></Link>
           </Paper>
         </Box>
 
-        <Link to="/settings/"><Button sx={{backgroundColor: 'white', width: '32.5vw', height: '10vh', color: 'black'}} variant="contained"><Typography>Settings</Typography></Button></Link>
     </div>
     );
   }
