@@ -1,9 +1,11 @@
 # **The Mobility Challenge Travel app**
 
 ## Exempel Bilder
-<img src="public\App.png" alt="drawing" width="200"/>
-<img src="public\AppWithPosition.png" alt="drawing" width="200"/>
-<img src="public\AppOpenDetails.png" alt="drawing" width="200"/>
+<p float="left">
+<img src="public\App.png" alt="drawing" width="250"/>
+<img src="public\AppWithPosition.png" alt="drawing" width="250"/>
+<img src="public\AppOpenDetails.png" alt="drawing" width="250"/>
+</p>
 
 
 ## Introduktion
