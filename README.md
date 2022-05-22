@@ -1,57 +1,68 @@
 # **The Mobility Challenge Travel app**
 
-## Introduction
-This React app was created for a competition regarding sustainable and climate-smart mobility solutions, arranged by Consid & Riksbyggen during 2022  
 
-*Created by: Josiah Barkström and David Fagerström*
+## Introduktion
+Här finner du en app skapad i React gjort originellt för en tävling som fokuserar på hållbara och klimatsmarta mobilitetslösningar, arrangerat av Consid & Riksbyggen runt år 2022
 
-## The goal
-The idea and goal of the competition were to innovate a mobility solution making transportation and travel easier for the residents of Kv. Spårvagnshallarna in their everyday lives and guiding them to make a more thought out way of transportation in terms of the effect on climate, time, and money. It should be easy to travel climate-smart.
+*Skapat av: Josiah Barkström och David Fagerström*
 
-## Project idea
-We had the idea to make a web-based mobile app that makes it easier and faster to compare multiple ways of transportation and lets the user pick their desired way of transportation based on climate effect, time and money. With this project, we wanted to encourage more people to go outside their comfort zone and try out new means of climate-smart transportation
+## Målet
+Idén och målet med tävlingen var att skapa en innovativ mobilitetslösning som möjliggör enklare vardags transporter och resor för invånarna i Kv. Spårvagnshallarna. Men som också fungerar som en guide till att ta mera genomtänkta transport beslut med hänsyn till påverkan på klimat, tid och pengar. Det ska vara enkelt att resa klimatsmart.
 
-## Why you should pick our solution
+## Projekt idén
+Vår idé är att göra en webbaserad mobilapp som gör det enklare och snabbare för slutanvändaren att jämföra flera transportsätt och låter användaren själv ta beslutet av sitt önskade transportsätt baserat på klimateffekt, tid och pengar. Med det här projektet ville vi uppmuntra fler människor att gå utanför sin komfortzon och prova nya sätt för klimatsmarta transporter och resor.
 
-Our app has a target group and combines all local methods of transportation within Helsingborg in one idealistic package.
+## Varför du borde välja våran app
+Vår app har både en tydlig målgrupp och samhällsfunktion, att opartiskt kombinera alla lokala transportsätt inom Helsingborg i ett enkelt paket så att slutanvändaren kan ta mer genomtänkta beslut.
 
-Our app is easily scalable and can be blown up and used in multiple regions in Sweden, supporting and integrating even more methods of transportation from multiple different companies/brands.
+Vår app är lätt skalbar och kan sprängas och användas i flera regioner i Sverige, vilket stöder och integrerar ännu fler transportsätt från flera olika företag/varumärken.
 
-We work in our customer's interest in combining info from multiple different apps and presenting it in one complete package. Saving them time and the hassle of downloading and updating multiple apps 
+Vi arbetar i våra kunders intresse genom att kombinera information från flera olika appar och presentera den i ett komplett paket. De sparar tid, pengar och besväret att behöva ladda ner och hålla flera appar uppdaterade.
 
-With our app solution, we present the end-user with a bigger picture of how their day-to-day traveling habits affect the environment, their economy, and time. With our tool, we want to inspire people to look outside the box and try on new ways of travel they maybe did not think of before. 
+Med vår app-lösning ger vi slutanvändaren en större tydlig bild av hur deras vardagliga resvanor påverkar miljön, deras ekonomi och tid. Med vårt verktyg vill vi inspirera fler människor att titta utanför ramarna och prova nya sätt att resa de kanske inte tänkt på innan.
 
-## App functions
-Listed here are the functions we are currently implementing and developing into the app.
 
-- An easy to maneuver clean website with its own identity
+## App funktioner
+Listat här är de funktioner vi håller på att implementerar och utvecklar in i appen.
 
-- Choice of transportation:
+- En lätt manövrerad hemsida med en urskiljande app identitet
 
-    - Passenger car
-    - Pool car
-    - Bike
-    - Pool Bike
-    - Bus (Skånetrafiken)
-    - Electric scooter (Bolt)
-    - Walk
+- Val av transport sätt:
+
+    - Personbil
+    - Pool bil
+    - Cykel
+    - Pool Cykel
+    - Buss (Skånetrafiken)
+    - El-sparkcykel (Bolt)
+    - Gå
     
-## Extra functions
-Listed here are the ideas we would like to implement for a future version of the app and would be needed for it to be put out into a larger production state.
+## Extra funktioner
+Listat här är idéer som vi anser viktiga att implementera i en framtida version av våran app som krävs för att kunna officiellt släppa appen till de större massorna som en produkt.
 
-- Payment methods (Swish, Credit card, Prepayed card)
-- More API's from more regions
-- location data from the different traveling methods
-- Support for trips abroad?
+- Betalmetoder (Swish, kreditkort/kontokort, Förbetalt kort)
+- Användning av fler API:er från fler regioner
+- Fordons platsposition från de olika rese sätten
+- Stöd för utlandsresor?
 
-## Execution
-We jumped on the development train a bit late and did not have much time to put everything into a finished app. We started our project by making a design document, writing down points we found important for a climate and mobility-focused app Furthermore, we continued the project by making a quick mockup of our vision and 
+## Utförande
+Vi kom in i tävlingen och startade utvecklandet på appen ganska sent. Detta gjorde att vi inte hann implementera alla metoder vi hade planerat till den slutgiltiga appen. Vi startade projektet och samarbetet genom att skapa ett designdokument över appen som inkluderar punkter vi fann viktiga för en klimat och mobilitetsfokuserad app samt önskade funktioner med tydliga kopplingar till ämnet. Vi fortsatte med att börja förverkliga vårat design-dokument och föra över det från papper till app. Resultatet av våran skapelse går att se här och är en tidig prototyp av våran vision för en klimatsmart mobilitets-app.
 
-## Design decisions
-We choose to use the React language which includes HTML, CSS, and JavaScript coding. We made use of React because of its flexibility in programming for multiple platforms using multiple integrations, its support from Meta, The very comprehensive documentation, and its great developer experience.
+## Design val
+Vi valde att använda oss av React språket som också inkluderar HTML, CSS, och JavaScript språken. Anledningen till valet att använda React ligger i dess flexibilitet i programmering för flera plattformar med flera integrationer, och dess upprätthåll av Meta samt den övergripande bekväma utvecklings-miljö den ger.
 
-For the API integration, we decided to go with TrafikLab for the required public transportation APIs needed for the project. We choose Trafiklab because of: the ease of use, its documentation, for future continued support and development, but also for its future scalability in implementing multiple public transport regions in future versions of the app.
+För API integrationerna valde vi att främst köra TrafikLab för information gällande kollektivtrafiken. Vi valde TrafikLab på grund av deras: lättanvändlighet, dokumentation, fortsatt framtida underhållning och utveckling och den skalbarhet som kommer med att kombinera fler regioners kollektivtrafik i framtida versioner av vår app.
 
-For the electric scooters, we decided to start off the project by just integrating bolt's electric scooters by using Bolt API.
+För elscooter valde vi att starta med att integrera Bolt's elsparkcyklar genom att använda Bolt API.
 
-Lastly, to calculate the time of travel by a car walking, and scootering, we used Google Maps API. We choose to go with Google because of our experience with the Google app and our experience with their reliable maps application.
+Slutligen för att beräkna rese tid med bil, gång, cyklar och elsparkcyklar använder vi Google Maps API. Vi valde att köra på Googles APi:er utifrån våra tidigare erfarenheter att kalla på deras API:er och användning av deras pålitliga kart applikation.
+
+## Setup
+För manuell deployment i test miljö: Se till att du har node.js installerat, ställ dig i root mappen (./travel-app), där kör du npm start för att starta rest miljön.
+
+Om du direkt vill se sidan direkt kan du följa länken <a  href=https://rese.xn--ml-yia.net/ >HÄR</a> eller skanna qr-koden.
+
+
+<p align="center">
+   <img src="public\qrcode_rese.mål.net.png" alt="drawing" width="200"/>
+</p>
