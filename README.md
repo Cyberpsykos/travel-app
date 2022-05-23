@@ -1,5 +1,12 @@
 # **The Mobility Challenge Travel app**
 
+## Skärmdumpar
+<p float="left">
+<img src="public\App.png" alt="drawing" width="250"/>
+<img src="public\AppWithPosition.png" alt="drawing" width="250"/>
+<img src="public\AppOpenDetails.png" alt="drawing" width="250"/>
+</p>
+
 
 ## Introduktion
 Här finner du en app skapad i React gjort originellt för en tävling som fokuserar på hållbara och klimatsmarta mobilitetslösningar, arrangerat av Consid & Riksbyggen runt år 2022
@@ -25,7 +32,7 @@ Med vår app-lösning ger vi slutanvändaren en större tydlig bild av hur deras
 ## App funktioner
 Listat här är de funktioner vi håller på att implementerar och utvecklar in i appen.
 
-- En lätt manövrerad hemsida med en urskiljande app identitet
+- En lätt manövrerad webbapp med en urskiljande app identitet
 
 - Val av transport sätt:
 
@@ -58,9 +65,9 @@ För elscooter valde vi att starta med att integrera Bolt's elsparkcyklar genom 
 Slutligen för att beräkna rese tid med bil, gång, cyklar och elsparkcyklar använder vi Google Maps API. Vi valde att köra på Googles APi:er utifrån våra tidigare erfarenheter att kalla på deras API:er och användning av deras pålitliga kart applikation.
 
 ## Setup
-För manuell deployment i test miljö: Se till att du har node.js installerat, ställ dig i root mappen (./travel-app), där kör du npm start för att starta rest miljön.
+För manuell deployment i test miljö: Se till att du har node.js installerat, ställ dig i root mappen (./travel-app), där kör du npm start för att starta test miljön.
 
-Om du direkt vill se sidan direkt kan du följa länken <a  href=https://rese.xn--ml-yia.net/ >HÄR</a> eller skanna qr-koden.
+Om du direkt vill se sidan kan du följa länken <a  href=https://rese.xn--ml-yia.net/ >HÄR</a> eller skanna qr-koden nedan.
 
 
 <p align="center">
